@@ -2,10 +2,12 @@ import React from 'react';
 import './OrderBox.css';
 import OrderDetails from "../OrderDetails/OrderDetails";
 import {OrderType} from "../../types";
+import OrderCost from "../OrderCost/OrderCost";
 
 interface OrderBoxProps {
   orderList: OrderType[];
   removeOrder: (name: string) => void;
+  totalCost: number;
 }
 
 const OrderBox: React.FC<OrderBoxProps> = (props) => {
@@ -22,6 +24,7 @@ const OrderBox: React.FC<OrderBoxProps> = (props) => {
           )
         }
       })}
+      <OrderCost totalCost={props.totalCost}/>
     </div>
   );
 };

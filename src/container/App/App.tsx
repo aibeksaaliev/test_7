@@ -48,13 +48,21 @@ function App() {
     }));
   };
 
+  const getOrderCost = MENU.reduce((acc, position) => {
+    order.forEach(orderPosition => {
+      if (position.name === orderPosition.name) {
+        return acc += (position.price * orderPosition.amount);
+      }
+    });
+    return acc;
+  }, 0);
 
 
 
 
   return (
     <div className="App">
-      <OrderBox orderList={order} removeOrder={removeOrder}/>
+      <OrderBox orderList={order} removeOrder={removeOrder} totalCost={getOrderCost}/>
       <MenuWindow menu={MENU} getOrder={getOrder}/>
     </div>
   );

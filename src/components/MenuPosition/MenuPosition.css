@@ -1,5 +1,22 @@
 .menu_position_box {
-    width: 50%;
-    height: 80px;
+    width: 40%;
+    height: 150px;
     background: #fff;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.position_img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.position_img img {
+    width: 65px;
+    display: block;
+    margin: auto;
 }
