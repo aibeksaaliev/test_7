@@ -1,5 +1,18 @@
 .order_box {
     width: 30%;
-    height: 100%;
+    height: 90vh;
     padding: 20px;
+}
+
+.order_description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 85px 0 5px;
+    margin-bottom: 10px;
+    color: #6e6e6e;
+}
+
+.order_name {
+    width: 120px;
+    text-align: left;
 }

@@ -1,5 +1,5 @@
 .order_cost_box {
-    width: 30%;
+    width: 40%;
     height: 50px;
     background: white;
     border-radius: 10px;
@@ -8,4 +8,5 @@
 
 .order_cost_box span {
     line-height: 50px;
+    text-transform: uppercase;
 }

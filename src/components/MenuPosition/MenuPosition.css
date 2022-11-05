@@ -5,9 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 20px;
     margin-bottom: 10px;
+    border: 1px solid #e4e4e4;
 }
 
 .position_img {
@@ -22,4 +23,12 @@
     width: 65px;
     display: block;
     margin: auto;
+}
+
+.menu_position_name {
+    color: #6e6e6e;
+}
+
+.menu_position_price {
+    font-weight: bold;
 }

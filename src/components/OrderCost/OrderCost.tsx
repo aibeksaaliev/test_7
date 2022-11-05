@@ -6,9 +6,12 @@ interface OrderCostProps {
 }
 
 const OrderCost: React.FC<OrderCostProps> = (props) => {
+
+  const orderInfo = props.totalCost === 0 ? "Order is empty" : `Total: ${props.totalCost} KGS`;
+
   return (
     <div className="order_cost_box">
-      <span>Total: {props.totalCost}</span>
+      <span>{orderInfo}</span>
     </div>
   );
 };

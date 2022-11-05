@@ -11,19 +11,29 @@ interface OrderBoxProps {
 }
 
 const OrderBox: React.FC<OrderBoxProps> = (props) => {
+
+  const getOrderDetails = props.orderList.map((position, index: number) => {
+      if (position.amount > 0) {
+        return (
+          <OrderDetails
+            key={index}
+            orderPosition={position}
+            onclick={() => {props.removeOrder(position.name)}}
+          />
+        )
+      } else {
+        return null;
+      }
+    });
+
   return (
     <div className="order_box">
-      {props.orderList.map((position, index: number) => {
-        if (position.amount > 0) {
-          return (
-            <OrderDetails
-              key={index}
-              orderPosition={position}
-              onclick={() => {props.removeOrder(position.name)}}
-            />
-          )
-        }
-      })}
+      <div className="order_description">
+        <span className="order_name">Name:</span>
+        <span>Amount:</span>
+        <span>Price:</span>
+      </div>
+      {getOrderDetails}
       <OrderCost totalCost={props.totalCost}/>
     </div>
   );

@@ -15,9 +15,6 @@ import Twister from '../../assets/Twister.avif';
 import ChickenPita from '../../assets/ChickenPita.avif';
 import Pepsi from '../../assets/Pepsi.avif';
 import Juice from '../../assets/Juice.avif';
-import Coffee from '../../assets/Coffee.avif';
-
-
 
 const MENU: MenuPositionType [] = [
   {name: "Big Basket", price: 899, image: BigBasket, id: 125548},
@@ -76,9 +73,6 @@ function App() {
     });
     return acc;
   }, 0);
-
-
-
 
   return (
     <div className="App">

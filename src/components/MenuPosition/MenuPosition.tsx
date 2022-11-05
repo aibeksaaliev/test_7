@@ -13,8 +13,8 @@ const MenuPosition: React.FC<MenuPositionProps> = (props) => {
       <div className="position_img">
         <img src={props.position.image} alt=""/>
       </div>
-      <span>{props.position.name}</span>
-      <span>{props.position.price} сом</span>
+      <span className="menu_position_name">{props.position.name}</span>
+      <span className="menu_position_price">{props.position.price} KGS</span>
     </div>
   );
 };
