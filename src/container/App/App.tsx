@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import OrderBox from "../../components/OrderBox/OrderBox";
 import {MenuPosition} from "../../types";
+import MenuWindow from "../../components/MenuWindow/MenuWindow";
 
 const MENU: MenuPosition [] = [
   {name: "Hamburger", price: 120, image: "", id: 125548},
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <OrderBox/>
+      <MenuWindow/>
     </div>
   );
 }
