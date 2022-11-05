@@ -1,33 +1,53 @@
 import React, {useState} from 'react';
 import './App.css';
 import OrderBox from "../../components/OrderBox/OrderBox";
-import {MenuPositionType, OrderType} from "../../types";
+import {MenuPositionType} from "../../types";
 import MenuWindow from "../../components/MenuWindow/MenuWindow";
-import burgerImg from "../../assets/image_2022-11-03_15-23-34.png"
-import hotDogImg from "../../assets/image_2022-11-05_14-23-01.png"
-import tacoImg from "../../assets/image_2022-11-05_14-24-19.png"
-import friesImg from "../../assets/image_2022-11-05_14-23-20.png"
-import cokeImg from "../../assets/image_2022-11-05_14-23-40.png"
-import juiceImg from "../../assets/image_2022-11-05_14-23-59.png"
+import BigBasket from '../../assets/BusketL26.avif';
+import MiddleBasket from '../../assets/Busket10.avif';
+import HotBasket from '../../assets/BusketHot.avif';
+import DuetBasket from '../../assets/BusketDuet.avif';
+import FriesBasket from '../../assets/BusketFries.avif';
+import FriesStandard from '../../assets/FriesStandart.avif';
+import BurgerChef from '../../assets/BurgerChefTower.avif';
+import BurgerSanders from '../../assets/BurgerSanders.avif';
+import Twister from '../../assets/Twister.avif';
+import ChickenPita from '../../assets/ChickenPita.avif';
+import Pepsi from '../../assets/Pepsi.avif';
+import Juice from '../../assets/Juice.avif';
+import Coffee from '../../assets/Coffee.avif';
+
 
 
 const MENU: MenuPositionType [] = [
-  {name: "Burger", price: 120, image: burgerImg, id: 125548},
-  {name: "Hot-Dog", price: 150, image: hotDogImg, id: 179156},
-  {name: "Taco", price: 30, image: tacoImg, id: 745135},
-  {name: "Fries", price: 90, image: friesImg, id: 715687},
-  {name: "Coke", price: 70, image: cokeImg, id: 189431},
-  {name: "Juice", price: 80, image: juiceImg, id: 489713}
+  {name: "Big Basket", price: 899, image: BigBasket, id: 125548},
+  {name: "Middle Basket", price: 589, image: MiddleBasket, id: 179156},
+  {name: "Hot Basket", price: 959, image: HotBasket, id: 745135},
+  {name: "Duet Basket", price: 479, image: DuetBasket, id: 715687},
+  {name: "Fries Basket", price: 309, image: FriesBasket, id: 189431},
+  {name: "Fries Standard", price: 159, image: FriesStandard, id: 489713},
+  {name: "Burger Chef", price: 189, image: BurgerChef, id: 489713},
+  {name: "Burger Sanders", price: 199, image: BurgerSanders, id: 489713},
+  {name: "Twister", price: 179, image: Twister, id: 489713},
+  {name: "Chicken Pita", price: 159, image: ChickenPita, id: 489713},
+  {name: "Pepsi", price: 99, image: Pepsi, id: 489713},
+  {name: "Juice", price: 109, image: Juice, id: 489713}
 ];
 
 function App() {
   const [order, setOrder] = useState([
-    {name: "Burger", amount: 0, price: 120},
-    {name: "Hot-Dog", amount: 0, price: 150},
-    {name: "Taco", amount: 0, price: 30},
-    {name: "Fries", amount: 0, price: 90},
-    {name: "Coke", amount: 0, price: 70},
-    {name: "Juice", amount: 0, price: 80}
+    {name: "Big Basket", price: 899, amount: 0},
+    {name: "Middle Basket", price: 589, amount: 0},
+    {name: "Hot Basket", price: 959, amount: 0},
+    {name: "Duet Basket", price: 479, amount: 0},
+    {name: "Fries Basket", price: 309, amount: 0},
+    {name: "Fries Standard", price: 159, amount: 0},
+    {name: "Burger Chef", price: 189, amount: 0},
+    {name: "Burger Sanders", price: 199, amount: 0},
+    {name: "Twister", price: 179, amount: 0},
+    {name: "Chicken Pita", price: 159, amount: 0},
+    {name: "Pepsi", price: 99, amount: 0},
+    {name: "Juice", price: 109, amount: 0}
   ]);
 
   const getOrder = (name: string) => {

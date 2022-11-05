@@ -7,6 +7,6 @@ export interface MenuPositionType {
 
 export interface OrderType {
   name: string;
-  amount: number;
   price: number;
+  amount: number;
 }

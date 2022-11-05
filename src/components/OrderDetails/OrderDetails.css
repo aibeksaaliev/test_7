@@ -1,16 +1,31 @@
-.order_details_box {
-    width: 100%;
-    height: 80px;
-    background: goldenrod;
-}
-
 .position_box {
     background: #fff;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 6px;
+    border-radius: 8px;
 }
 
-.total_box {
-    display: flex;
-    justify-content: space-between;
+.position_name {
+    width: 80px;
+    text-align: left;
+}
+
+.position_amount, .position_price {
+    background: rgba(80, 35, 20, 0.5);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.remove_btn {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
 }

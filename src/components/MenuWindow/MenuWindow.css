@@ -1,7 +1,9 @@
 .menu {
     width: 70%;
-    height: 95vh;
+    height: 100%;
     background: green;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
 }
