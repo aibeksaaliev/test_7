@@ -4,3 +4,9 @@ export interface MenuPositionType {
   image: string;
   id: number;
 }
+
+export interface OrderType {
+  name: string;
+  amount: number;
+  price: number;
+}
