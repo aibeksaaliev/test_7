@@ -1,4 +1,4 @@
-export interface MenuPosition {
+export interface MenuPositionType {
   name: string;
   price: number;
   image: string;
