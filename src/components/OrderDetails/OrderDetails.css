@@ -3,3 +3,14 @@
     height: 95vh;
     background: goldenrod;
 }
+
+.position_box {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total_box {
+    display: flex;
+    justify-content: space-between;
+}
